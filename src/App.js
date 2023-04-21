@@ -49,13 +49,13 @@ function App() {
       for (let i = 0; str.length <= 3; i++) {
         str = `0${str}`;
       }
-      document.getElementsByName('HeroBanner').style = {
-        overflow: "hidden"
-       }
+      // document.getElementsByName('HeroBanner').style = {
+      //   overflow: "hidden"
+      //  }
       return str;
     };
     const imageToUse = `${seq}${formatNum(label)}.jpg`;
-    const style = { backgroundImage: `url(${imageToUse})`,backgroundSize: "cover" };
+    const style = { backgroundImage: `url(${imageToUse})`,backgroundSize: "cover",mixBlendMode:"none" };
     
     setImgStyle(style);
 

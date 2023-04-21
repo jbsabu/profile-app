@@ -34,7 +34,8 @@ header ,section, footer {
 
 .App {
   background-color: #dddddd;
-  background-image: url('../public/images/725626.jpg');
+  background-image: url('../public/imageSequence/0001.jpg');
+  background-size: cover
 }
 
 
@@ -49,6 +50,10 @@ header ,section, footer {
   border-style: ridge;
   border-color: #dddddd;
   border-color: rgb(188, 176, 153);
+}
+
+.quote {
+  font-variant: small-caps;
 }
 
 .about-container:not(.about-img) {
