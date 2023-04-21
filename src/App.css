@@ -1,38 +1,134 @@
+/* :root{
+  --url: ".././public/imageSequence"
+} */
+
+*, *:before, *:after {
+  margin: 0; padding: 0; box-sizing: inherit;
+}
+
+header ,section, footer {
+  padding: 20px
+}
+
+.container {
+  padding: 10px
+}
+
+/* body {
+  overflow: hidden;
+  overflow-y: scroll;
+} */
+
+.heroBanner {
+  
+  
+  border: 50px red;
+  padding: 5vw;
+  /* size: 60vw; */
+  width: 100%;
+  height: 100vw;
+  /* background-image: url("./imageSequence/0011.jpg"); */
+  background-size: cover;
+
+}
+
 .App {
-  text-align: center;
+  background-color: #dddddd;
+  background-image: url('../public/images/725626.jpg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.about-img {
+  /* mix-blend-mode: difference; */
+  isolation: isolate;
+  background-color: black ;
+  size: 10px; 
+  width: 50%;
+  display:"inline-block";
+  border: 2px;
+  border-style: ridge;
+  border-color: #dddddd;
+  border-color: rgb(188, 176, 153);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-container:not(.about-img) {
+
+  background-color: rgb(129, 129, 129) ;
+  mix-blend-mode: difference;
+  border: 10px;
+  
+  isolation: isolate;
+  border-style: ridge;
+  border-color: #dddddd;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.about-container p {
+  color: rgb(70, 245, 178);
+  /* mix-blend-mode:difference; */
+  /* text-shadow: 1px 1px 1px coral; */
+  font-size: small;
+  
+  mix-blend-mode:multiply;
+
+  
 }
 
-.App-link {
-  color: #61dafb;
+.about-p {
+
+
+  color:rgba(12, 3, 24, 0.911)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quote-container p {
+  font-size: clamp(23px,4vw,26px);
+  font-weight: 700;
+}
+
+.quote-container q {
+  font-size: 85%
+
+}
+
+.grid-container {
+  background-color: rgb(129, 129, 129) ;
+  mix-blend-mode: difference;
+  border: 10px;
+
+  border-style: ridge;
+  border-color: #dddddd;
+}
+
+.grid-container p {
+  color: rgb(70, 245, 178);
+  mix-blend-mode:difference;
+  /* text-shadow: 1px 1px 1px coral; */
+  font-size: small;
+  filter:hue-rotate(90deg);
+  text-shadow: 15px 5px 10px rgb(233, 224, 224);
+}
+
+h2{
+  font-weight: 700;
+  color:rgb(255, 255, 255);
+  mix-blend-mode:overlay;
+
+  
+}
+
+
+.col p {
+  mix-blend-mode:multiply;
+
+  color:rgba(12, 3, 24, 0.911)
+}
+
+h1{
+  color: rgb(208, 206, 206);
+  mix-blend-mode:overlay;
+}
+
+
+.carousel-container {
+  padding: 15px
 }
